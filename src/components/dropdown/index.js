@@ -75,7 +75,7 @@ export default class Dropdown extends PureComponent {
       'landscape-right',
     ],
 
-    useNativeDriver: true,
+    useNativeDriver: false,
   };
 
   static propTypes = {
@@ -152,7 +152,7 @@ export default class Dropdown extends PureComponent {
 
     supportedOrientations: PropTypes.arrayOf(PropTypes.string),
 
-    useNativeDriver: PropTypes.bool,
+    useNativeDriver: PropTypes.bool.isRequired,
   };
 
   constructor(props) {
